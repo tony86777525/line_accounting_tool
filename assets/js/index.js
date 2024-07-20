@@ -50,7 +50,19 @@ $(document).ready(function() {
         ).then(
             response => response.json()
         ).then(data => {
-            alert('Success');
+            liff.sendMessages([
+                {
+                    type: "text",
+                    text: "記帳成功！",
+                },
+            ])
+            .then(() => {
+                liff.closeWindow();
+            })
+            .catch((err) => {
+                liff.closeWindow();
+            });
+
         })
     });
 });
