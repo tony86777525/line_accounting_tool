@@ -17,13 +17,13 @@ $(document).ready(function() {
         }).then(function() {
             console.log('LIFF init');
 
-            const isLoggedIn = liff.isLoggedIn();
-
-            if(isLoggedIn) {
-                liff.getProfile().then(profile => {
-                    $('#user').val(profile.displayName);
-                })
-            }
+            // const isLoggedIn = liff.isLoggedIn();
+            //
+            // if(isLoggedIn) {
+            //     liff.getProfile().then(profile => {
+            //         $('#user').val(profile.displayName);
+            //     })
+            // }
 
         }).catch(function(error) {
             console.log(error);
