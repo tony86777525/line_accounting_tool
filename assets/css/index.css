@@ -1,0 +1,79 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 20px;
+}
+h2 {
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group label {
+    color: #ff6f61;
+}
+.form-control {
+    border-radius: 20px;
+    border: 2px solid #ff6f61;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ff6f61;
+}
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.btn-primary:hover {
+    background-color: #ff3d2e;
+    border-color: #ff3d2e;
+}
+form {
+    border: 2px dashed #ff6f61;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.ui-autocomplete {
+    background-color: rgba(255, 255 ,255, 0.8);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 1000;
+    width: 50vw!important;
+    list-style-type: "💸"
+}
+.ui-menu-item-wrapper {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.ui-menu-item-wrapper.ui-state-active {
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 20px;
+}
+.amountTools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+.amountTools > span {
+    background: #b8e4f0;
+    padding: 0 3px;
+    border-radius: 5px;
+}
+.amountTools .add {
+    color: #ff6f61;
+}
+.amountTools .reduce {
+    color: #6177ff;
+}
+.amountTools .multi {
+    color: #105a0b;
+}
