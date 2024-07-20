@@ -18,8 +18,21 @@
         </div>
         <hr class="opacity-0">
         <div class="form-group">
-            <label for="user">誰的錢錢丟水溝</label>
-            <input type="text" class="form-control" id="user" name="user" required>
+            <label>誰的錢錢丟水溝</label>
+            <div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineRadio1">共同</label>
+                <input class="form-check-input" type="radio" name="user" id="inlineRadio1" value="共同" checked>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineRadio2">白白</label>
+                <input class="form-check-input" type="radio" name="user" id="inlineRadio2" value="白白">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineRadio3">迪西</label>
+                <input class="form-check-input" type="radio" name="user" id="inlineRadio3" value="迪西">
+            </div>
+            </div>
         </div>
         <hr class="opacity-0">
         <div class="form-group">
@@ -38,6 +51,7 @@
                 <option>現金</option>
                 <option>信用卡</option>
                 <option>電子支付</option>
+                <option>轉出</option>
             </select>
         </div>
         <hr class="opacity-0">
