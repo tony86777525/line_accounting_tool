@@ -40,7 +40,9 @@ $(document).ready(function() {
             url: gas,
             body: JSON.stringify(data),
         };
-        console.log(settings);
+
+        $('.mask').show();
+
         return fetch(
             settings.url,
             {
