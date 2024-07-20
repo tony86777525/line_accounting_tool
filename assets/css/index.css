@@ -56,6 +56,9 @@ form {
     color: #fff;
     border-radius: 20px;
 }
+.ui-helper-hidden-accessible {
+    display: none;
+}
 .amountTools {
     display: flex;
     flex-wrap: wrap;
@@ -76,4 +79,14 @@ form {
 }
 .amountTools .multi {
     color: #105a0b;
+}
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(99, 99, 99, .6);
 }
