@@ -5,13 +5,32 @@ $(document).ready(function() {
         const today = new Date().toISOString().substr(0, 10);
         $('#date').val(today);
 
-        // 類別的模糊搜尋
-        let categories = ["飲食", "交通", "娛樂", "醫療", "保險", "教育", "衣服", "旅遊", "房貸", "水電", "其他"];
-        $("#category").autocomplete({
-            source: categories
-        });
+        let data = {
+            type: 'get_categories'
+        };
 
-        let isLoggedIn = false;
+        let settings = {
+            method: 'POST',
+            url: gas,
+            body: JSON.stringify(data),
+        };
+        fetch(
+            settings.url,
+            {
+                method: settings.method,
+                body: settings.body,
+            },
+        ).then(
+            response => response.json()
+        ).then(data => {
+            let categories = data.values;
+
+            $("#category").autocomplete({
+                source: categories
+            });
+        })
+
+        // let isLoggedIn = false;
         liff.init({
             liffId: liffID
         }).then(function() {
