@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
     const liffID = '2005889130-qp2MMZPk';
     const gas = 'https://script.google.com/macros/s/AKfycbyij5xtv_l_l4jS0mWTju6ddB-AOHkQOsH-xGYChobJoick3wAQQSnw5pxFwrsgY5oJ/exec'
     $(document).ready(() => {
